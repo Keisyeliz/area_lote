@@ -55,7 +55,7 @@ def fnt_selector(op):
         if tipo_lote == '1':
             print('---LISTA DE LOTES URBANOS---\n' )
             if len(list_urbano) == 0:
-                print('No hay viajeros registrados\n')
+                print('No hay lotes registrados\n')
                 enter = input('Presione <Enter> para continuar...')
             else:
                 for lote in list_urbano:
@@ -64,7 +64,7 @@ def fnt_selector(op):
         elif tipo_lote == '2':
             print('---LISTA DE LOTES COMERCIALES---\n' )
             if len(list_comercial) == 0:
-                print('No hay viajeros registrados\n')
+                print('No hay lotes registrados\n')
                 enter = input('Presione <Enter> para continuar...')
             else:
                 for lote in list_comercial:
@@ -73,7 +73,7 @@ def fnt_selector(op):
         elif tipo_lote == '3':
                     print('---LISTA DE LOTES CAMPESTRES---\n' )
                     if len(list_campestre) == 0:
-                        print('No hay viajeros registrados\n')
+                        print('No hay lotes registrados\n')
                         enter = input('Presione <Enter> para continuar...')
                     else:
                         for lote in list_campestre:
