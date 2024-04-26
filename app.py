@@ -14,37 +14,40 @@ def fnt_selector(op):
         tipo_lote = input('---TIPO DE LOTE---\n1. Urbano\n2. Comercial\n3. Campestre\n->')
         fnt_limpiar()
         if tipo_lote == '1':
+            propietario = input('Ingrese el nombre del propietario: ')
             frente = float(input('Ingrese la medida del frente del lote: '))
             fondo = float(input('Ingrese la medida del fondo del lote: '))
             area = frente * fondo
             mt2 = 25000 * area
             permiso_const = 0.45 * mt2
             total = mt2 + permiso_const
-            lote = f"Area: $ {area} Valor del area: $ {mt2} Permiso de construcción: $ {permiso_const} Valor total: $ {total}"
+            lote = f"Nombre del propietario: {propietario} Area: $ {area} Valor del area: $ {mt2} Permiso de construcción: $ {permiso_const} Valor total: $ {total}"
             list_urbano.append(lote)
             print('Registro exitoso\n')
             enter = input('Presione <Enter> para continuar...')
 
         elif tipo_lote == '2':
+            propietario = input('Ingrese el nombre del propietario: ')
             frente = float(input('Ingrese la medida del frente del lote: '))
             fondo = float(input('Ingrese la medida del fondo del lote: '))
             area = frente * fondo
             mt2 = 60000 * area
             permiso_const = 0.75 * mt2
             total = mt2 + permiso_const
-            lote = f"Area: $ {area} Valor del area: $ {mt2} Permiso de construcción: $ {permiso_const} Valor total: $ {total}"
+            lote = f"Nombre del propietario: {propietario} Area: $ {area} Valor del area: $ {mt2} Permiso de construcción: $ {permiso_const} Valor total: $ {total}"
             list_comercial.append(lote)
             print('Registro exitoso\n')
             enter = input('Presione <Enter> para continuar...')
 
         elif tipo_lote == '3':
+            propietario = input('Ingrese el nombre del propietario: ')
             frente = float(input('Ingrese la medida del frente del lote: '))
             fondo = float(input('Ingrese la medida del fondo del lote: '))
             area = frente * fondo
             mt2 = 35000 * area
             permiso_const = 0.15 * mt2
             total = mt2 + permiso_const
-            lote = f"Area: $ {area} Valor del area: $ {mt2} Permiso de construcción: $ {permiso_const} Valor total: $ {total}"
+            lote = f"Nombre del propietario: {propietario} Area: $ {area} Valor del area: $ {mt2} Permiso de construcción: $ {permiso_const} Valor total: $ {total}"
             list_campestre.append(lote)
             print('Registro exitoso\n')
             enter = input('Presione <Enter> para continuar...')
